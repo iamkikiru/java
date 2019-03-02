@@ -1,0 +1,56 @@
+//setGame() 초기셋팅
+	//GUI
+		// 버튼1, Panel1,
+	//가상화면
+		//Image offI, Graphics offG
+	//변수초기화
+		//boolean map[12][21]  -> T/F
+		//Color colorMap[12][21]
+		//int blockX[4], int blockY[4]
+		// int runGame  --> 게임전, 게임중, 게임종료
+	//첫게임 그리기
+		//setBlockInMap()  //맵에다가 블럭이 있는곳은 T
+		//drawMap()  //블럭그리기
+		//drawGrid() //
+		//repaint()
+
+// startBtn눌러서 시작
+  	//블럭만들기  : setBlockInMap()  //맵에다가 블럭이 있는곳은 T
+	//블럭떨어뜨리기
+		//Thread.start() --> run()
+		//run()
+			//sleep(1000);
+			//블럭떨어뜨리기 : dropBlock()
+			// repaint()
+	//dropBlock(){
+		// 현재 블럭을 지울것 : removeBlock()
+		// if (떨어질수 있으면){블럭의 y+1}
+		// else { 
+			//setBlockInMap()  //맵에다가 블럭이 있는곳은 T
+			//nextBlock() 다음블럭처리	
+	// nextBlock(){
+		// delLine() 라인을 지울것(있으면)
+		// setBlockXY(blockType)  블럭을 다시 셋팅
+		// checkGameOver()
+	//delLine(){
+	     //for
+		// 한줄을 지울수 있으면 지워 , deleteLine(int delLineNum)
+		// 중력에 의한 한줄 내리기 체크 및 처리, dropResultLine(int delLineNum)
+	//deleteLine( int deleteLineNum){
+		//for
+			// 현재줄에 윗줄값 대입
+		// 맨윗줄 추가
+		//다시그리기
+			//drawMap(), drawGrid(), repaint()
+	//dropResultLine(int delLineNum){
+		//한줄을 내릴수 있으면
+
+// 키이벤트 class MyKeyHandler extends KeyAdapter
+	//좌키
+	//우키
+	//아래키
+	//위키
+
+	//턴할수 있는지 체크, checkTurn()
+	//내릴수 있는지 체크, checkMove()
+	//블럭 회전 . turnBlock()
