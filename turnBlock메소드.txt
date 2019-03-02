@@ -1,0 +1,151 @@
+public void turnBlock() {
+			switch(blockType) {
+			//case 0 : blockType 0은 정사각형이므로 회전이 의미 없음
+			
+			case 1:				//타입1의 4가지 모양 설정
+				switch(blockShape) {
+					case 0:
+						blockX[0]=blockX[0]; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]; blockY[1]=blockY[1];
+						blockX[2]=blockX[2]; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]-1; blockY[3]=blockY[3]+1;
+						break;
+					case 1:
+						blockX[0]=blockX[0]-1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]+1; blockY[1]=blockY[1]-1;
+						blockX[2]=blockX[2]+1; blockY[2]=blockY[2]-1;
+						blockX[3]=blockX[3]; blockY[3]=blockY[3]-1;
+						break;
+					case 2:
+						blockX[0]=blockX[0]+1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]; blockY[1]=blockY[1]+1;
+						blockX[2]=blockX[2]; blockY[2]=blockY[2]+1;
+						blockX[3]=blockX[3]; blockY[3]=blockY[3]+1;
+						break;
+					case 3:
+						blockX[0]=blockX[0]; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]-1; blockY[1]=blockY[1];
+						blockX[2]=blockX[2]-1; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]+1; blockY[3]=blockY[3]-1;
+						break;
+				}
+				break;		//case1  완료	
+			
+			case 2:				//타입2의 4가지 모양 설정
+				switch(blockShape) {
+					case 0:
+						blockX[0]=blockX[0]-2; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]+1; blockY[1]=blockY[1]-1;
+						blockX[2]=blockX[2]; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]-1; blockY[3]=blockY[3]+1;
+						break;
+					case 1:
+						blockX[0]=blockX[0]; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]; blockY[1]=blockY[1];
+						blockX[2]=blockX[2]+1; blockY[2]=blockY[2]-1;
+						blockX[3]=blockX[3]-1; blockY[3]=blockY[3]-1;
+						break;
+					case 2:
+						blockX[0]=blockX[0]+1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]; blockY[1]=blockY[1]+1;
+						blockX[2]=blockX[2]-1; blockY[2]=blockY[2]+2;
+						blockX[3]=blockX[3]+2; blockY[3]=blockY[3]+1;
+						break;
+					case 3:
+						blockX[0]=blockX[0]+1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]-1; blockY[1]=blockY[1];
+						blockX[2]=blockX[2]; blockY[2]=blockY[2]-1;
+						blockX[3]=blockX[3]; blockY[3]=blockY[3]-1;
+						break;
+				}
+				break;		//case2  완료	
+					
+			case 3:				//타입3의 4가지 모양 설정
+				switch(blockShape) {
+					case 0:
+						blockX[0]=blockX[0]+1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]+1; blockY[1]=blockY[1];
+						blockX[2]=blockX[2]-1; blockY[2]=blockY[2]+1;
+						blockX[3]=blockX[3]-1; blockY[3]=blockY[3]+1;
+						break;
+					case 1:
+						blockX[0]=blockX[0]-2; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]-1; blockY[1]=blockY[1]-1;
+						blockX[2]=blockX[2]+1; blockY[2]=blockY[2]-2;
+						blockX[3]=blockX[3]; blockY[3]=blockY[3]-1;
+						break;
+					case 2:
+						blockX[0]=blockX[0]+1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]+1; blockY[1]=blockY[1];
+						blockX[2]=blockX[2]-1; blockY[2]=blockY[2]+1;
+						blockX[3]=blockX[3]-1; blockY[3]=blockY[3]+1;
+						break;
+					case 3:
+						blockX[0]=blockX[0]; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]-1; blockY[1]=blockY[1]+1;
+						blockX[2]=blockX[2]+1; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]+2; blockY[3]=blockY[3]-1;
+						break;
+				}
+				break;		//case3  완료	
+				
+			case 4:				//타입4의 4가지 모양 설정
+				switch(blockShape) {
+					
+					case 0:
+					case 2:
+						blockX[0]=blockX[0]+1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]+2; blockY[1]=blockY[1]-1;
+						blockX[2]=blockX[2]-1; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]; blockY[3]=blockY[3]-1;
+						break;
+					case 1:
+					case 3:
+						blockX[0]=blockX[0]-1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]-2; blockY[1]=blockY[1]+1;
+						blockX[2]=blockX[2]+1; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]; blockY[3]=blockY[3]+1;
+						break;
+				}
+				break;		//case4   완료	
+			
+			case 5:				//타입5의 4가지 모양 설정
+				switch(blockShape) {
+					case 0:
+					case 2:
+						blockX[0]=blockX[0]-1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]+1; blockY[1]=blockY[1]-1;
+						blockX[2]=blockX[2]; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]+2; blockY[3]=blockY[3]-1;
+						break;
+					case 1:
+					case 3:
+						blockX[0]=blockX[0]+1; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]-1; blockY[1]=blockY[1]+1;
+						blockX[2]=blockX[2]; blockY[2]=blockY[2];
+						blockX[3]=blockX[3]-2; blockY[3]=blockY[3]+1;
+						break;
+				}
+				break;		//case5   완료	
+					
+			case 6:				//타입6의 4가지 모양 설정
+				switch(blockShape) {
+					case 0:
+					case 2:
+						blockX[0]=blockX[0]+2; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]+1; blockY[1]=blockY[1]+1;
+						blockX[2]=blockX[2]; blockY[2]=blockY[2]+2;
+						blockX[3]=blockX[3]-1; blockY[3]=blockY[3]+3;
+						break;
+					case 1:
+					case 3:
+						blockX[0]=blockX[0]-2; blockY[0]=blockY[0];
+						blockX[1]=blockX[1]-1; blockY[1]=blockY[1]-1;
+						blockX[2]=blockX[2]; blockY[2]=blockY[2]-2;
+						blockX[3]=blockX[3]+1; blockY[3]=blockY[3]-3;
+						break;
+				}
+				break;		//case6  4가지 타입 완료	
+				
+			}
+		} //end of turnBlock()
