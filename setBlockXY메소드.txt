@@ -1,0 +1,46 @@
+public void setBlockXY(int type) {
+		switch(type) {
+			case 0:
+				blockX[0] = 5; blockY[0] = 0;
+				blockX[1] = 6; blockY[1] = 0;
+				blockX[2] = 5; blockY[2] = 1;
+				blockX[3] = 6; blockY[3] = 1;
+				break;
+			case 1:
+				blockX[0] = 6; blockY[0] = 0;
+				blockX[1] = 5; blockY[1] = 1;
+				blockX[2] = 6; blockY[2] = 1;
+				blockX[3] = 7; blockY[3] = 1;
+				break;
+			case 2:
+				blockX[0] = 7; blockY[0] = 0;
+				blockX[1] = 5; blockY[1] = 1;
+				blockX[2] = 6; blockY[2] = 1;
+				blockX[3] = 7; blockY[3] = 1;
+				break;
+			case 3:
+				blockX[0] = 5; blockY[0] = 0;
+				blockX[1] = 5; blockY[1] = 1;
+				blockX[2] = 6; blockY[2] = 1;
+				blockX[3] = 7; blockY[3] = 1;
+				break;
+			case 4:
+				blockX[0] = 5; blockY[0] = 0;
+				blockX[1] = 5; blockY[1] = 1;
+				blockX[2] = 6; blockY[2] = 1;
+				blockX[3] = 6; blockY[3] = 2;
+				break;
+			case 5:
+				blockX[0] = 6; blockY[0] = 0;
+				blockX[1] = 5; blockY[1] = 1;
+				blockX[2] = 6; blockY[2] = 1;
+				blockX[3] = 5; blockY[3] = 2;
+				break;
+			case 6:
+				blockX[0] = 4; blockY[0] = 0;
+				blockX[1] = 5; blockY[1] = 0;
+				blockX[2] = 6; blockY[2] = 0;
+				blockX[3] = 7; blockY[3] = 0;
+				break;
+		}
+	}
