@@ -1,0 +1,9 @@
+	public void setColorType() {
+		colorType[0] = new Color(65,228,82);
+		colorType[1] = new Color(58,98,235);
+		colorType[2] = new Color(128,0,64);
+		colorType[3] = new Color(255,35,31);
+		colorType[4] = new Color(68,17,111);
+		colorType[5] = new Color(246,118,57);
+		colorType[6] = new Color(224,134,4);
+	}
